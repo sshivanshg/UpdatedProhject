@@ -9,7 +9,7 @@ import Auth from './Pages/Auth';
 import Dashboard from './Pages/dashboard';
 import LandingPage from './Pages/landingpage';
 import Link from './Pages/link';
-  
+
 // Layouts
 
 // Route configuration
