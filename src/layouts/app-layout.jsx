@@ -1,4 +1,4 @@
-import Header from "@/Components/Header";
+import Header from "@/components/header";
 import {Outlet} from "react-router-dom";
 
 const AppLayout = () => {
@@ -9,7 +9,7 @@ const AppLayout = () => {
         <Outlet />
       </main>
       <div className="p-10 text-center bg-gray-800 mt-10">
-        Building bit by bit
+        Building Bit by Bit
       </div>
     </div>
   );

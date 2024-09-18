@@ -15,4 +15,3 @@ export default defineConfig({
     "react/prop-types": 0,
   },
 });
-
