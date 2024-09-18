@@ -5,6 +5,7 @@ import {UrlState} from "@/context";
 import {useEffect} from "react";
 import {useNavigate, useSearchParams} from "react-router-dom";
 
+
 function Auth() {
   let [searchParams] = useSearchParams();
   const navigate = useNavigate();
