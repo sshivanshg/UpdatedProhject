@@ -10,6 +10,7 @@ import {Copy, Download, LinkIcon, Trash} from "lucide-react";
 import {useEffect} from "react";
 import {useNavigate, useParams} from "react-router-dom";
 import {BarLoader, BeatLoader} from "react-spinners";
+// const BASE_URL = process.env.REACT_APP_BASE_URL || '';
 
 const LinkPage = () => {
   const downloadImage = () => {
@@ -76,11 +77,11 @@ const LinkPage = () => {
             {url?.title}
           </span>
           <a
-            href={`https://shorten-url-blush.vercel.app/${link}`}
+            href={`https://crazyurl.online/${link}`}
             target="_blank"
             className="text-3xl sm:text-4xl text-blue-400 font-bold hover:underline cursor-pointer"
           >
-           https://shorten-url-blush.vercel.app/{link}
+           https://crazyurl.online/{link}
           </a>
           <a
             href={url?.original_url}
@@ -97,8 +98,9 @@ const LinkPage = () => {
             <Button
               variant="ghost"
               onClick={() =>
-                navigator.clipboard.writeText(`https://shorten-url-blush.vercel.app/${link}`)
+                navigator.clipboard.writeText(`https://crazyurl.online/${link}`)
               }
+              
             >
               <Copy />
             </Button>
