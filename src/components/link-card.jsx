@@ -16,6 +16,8 @@ const LinkCard = ({url = [], fetchUrls}) => {
     anchor.href = imageUrl;
     anchor.download = fileName;
 
+    
+
     // Append the anchor to the body
     document.body.appendChild(anchor);
 

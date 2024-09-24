@@ -87,24 +87,24 @@ const LinkPage = () => {
             target="_blank"
             className="flex items-center gap-1 hover:underline cursor-pointer"
           >
-            <LinkIcon className="p-1" />
+            {/* <LinkIcon className="p-1" /> */}
             {url?.original_url}
           </a>
           <span className="flex items-end font-extralight text-sm">
             {new Date(url?.created_at).toLocaleString()}
           </span>
           <div className="flex gap-2">
-            <Button
+            {/* <Button
               variant="ghost"
               onClick={() =>
                 navigator.clipboard.writeText(`https://crazyurl.online/${link}`)
               }
             >
               <Copy />
-            </Button>
-            <Button variant="ghost" onClick={downloadImage}>
-              <Download />
-            </Button>
+            </Button> */}
+            {/* <Button variant="ghost" onClick={downloadImage}> */}
+              {/* <Download /> */}
+            {/* </Button> */}
             <Button
               variant="ghost"
               onClick={() =>
@@ -121,11 +121,11 @@ const LinkPage = () => {
               )}
             </Button>
           </div>
-          <img
+          {/* <img
             src={url?.qr}
             className="w-full self-center sm:self-start ring ring-blue-500 p-1 object-contain"
             alt="qr code"
-          />
+          /> */}
         </div>
 
         <Card className="sm:w-3/5">
